@@ -1,4 +1,14 @@
 <hello name="{{ name }}"></hello>
-<p>
-  Start editing to see some magic happen :)
-</p>
+
+<tr>
+  <td>
+    <b>Poids</b>
+    <div *ngFor="let points of multi[0].points">{{ points.value }} kg</div>
+  </td>
+
+  <td id="spacer"></td>
+  <td>
+    <b>Taille</b>
+    <div *ngFor="let points of multi[1].points">{{ points.value }} cm</div>
+  </td>
+</tr>
